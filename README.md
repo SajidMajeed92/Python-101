@@ -4,7 +4,7 @@
 
 <div style="width: 60%; height: 60%">
   
-  ![image]("https://user-images.githubusercontent.com/92437858/198993776-cadc5510-ca02-4476-a802-00e5149f53d4.png")
+  ![image](https://user-images.githubusercontent.com/92437858/198993776-cadc5510-ca02-4476-a802-00e5149f53d4.png)
   
 </div>
 
