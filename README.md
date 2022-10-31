@@ -1,14 +1,6 @@
 # Python-101
 **Learn Python Programming**
 
-
-<div style="width: 40%; height: 50%">
-  ![image](https://user-images.githubusercontent.com/92437858/198993776-cadc5510-ca02-4476-a802-00e5149f53d4.png)
-</div>
-
-
-
-
 Python is a **general-purpose, mordern, dynamic, robust, high level** and **interpreted** programming language. It is used in web development, data science, creating software prototypes, and so on. Fortunately for beginners, Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners.
 
 **About Python Programming**
