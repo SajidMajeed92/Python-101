@@ -1,219 +1,114 @@
-def welcome():
-    print("Introduction to function")
-welcome()
+# We can define the User defined functions in multiple ways.
+# The following are the list of available types of functions in Python.
 
-def name():
-    name= input("Enter your Name:")
-    print(name,"Welcome to Python 101")
-name()
-def add():
-    number1= int(input("Number 1 is:"))
-    number2 = int(input("Number 2 is:"))
-    sum = number1+number2
-    print("Sum of two numbers is:", sum)
-add()
-def product():
-    number1= int(input("Number 1 is:"))
-    number2 = int(input("Number 2 is:"))
-    result = number1*number2
-    print("Product of two numbers is:", result)
-product()
+# With no argument and no return value.
+# With no argument and with a Return value.
+# Argument and No Return value.
+# With argument and return value.
 
-def difference():
-    number1= int(input("Number 1 is:"))
-    number2 = int(input("Number 2 is:"))
-    result = number1-number2
-    print("Difference of two numbers is:", result)
-difference()
-def division():
-    number1= int(input("Number 1 is:"))
-    number2 = int(input("Number 2 is:"))
-    result = number1/number2
-    print("Division of two numbers is:", result)
-division()
-
-def addNumbers(x,y):
-    sum = x + y
-    return sum
-output = addNumbers(12,9)
-print(output)
-
-def diffNumbers(x,y):
-    diff = x - y
-    return diff
-output = diffNumbers(12,9)
-print(output)
-
-def productOfNumber(x,y):
-    product = x * y
-    return product
-output = productOfNumber(12,9)
-print(output)
-
-def divisionOfNumber(x,y):
-     division = x / y
-     return division
-output = divisionOfNumber(12,3)
-print(output)
-
-def myFruits(f1, f2, f3, f4):
-    FruitsList = [f1, f2, f3, f4]
-    return FruitsList
-output = myFruits("Apple", "Bannana", "Grapes", "Orange")
-print(output)
-
-def myAnimals(a1,a2,a3):
-    Animalgroup = {'Kitten':a1,'Puppy':a2,'Pup':a3}
-    return Animalgroup
-
-output = myAnimals("Cat","Dog","Rat")
-print(output)
-
-def max_of_two( x, y ):
-    if x > y:
-        return x
-    return y
-def max_of_three( x, y, z ):
-    return max_of_two( x, max_of_two( y, z ) )
-
-print(max_of_two(3, 6, -5))
-print(max_of_three(3, 6, -5))
-
-def myChocolates(cList):
-    for i in cList:
-        print(i)
-
-chocolateList = ["Dairy Milk","Snickers","Kitkat"]
-myChocolates(chocolateList)
-
-def Calendar(year, month, date=''):
-    print(year, month, date)
-Calendar(2023, 2, 14)
-
-def SwapTwoNumbers(a, b):
-    print("Before Swap: ", a, b)
-    a = a + b
-    b = a - b
-    a = a - b
-    return a, b
-a, b = SwapTwoNumbers(17, 24)
-print("After Swap: ", a, b)
-
-def palindromeCheck(num):
-    temp = num
-    rev = 0
-    while (num != 0):
-        r = num % 10
-        rev = rev * 10 + r
-        num = num // 10
-    if (rev == temp):
-        print(temp, "is a palindrome number")
-    else:
-        print(temp, "is not a palindrome number")
+# Types of Functions in Python
+# **Python Function with No argument and No Return value**
+# With No Arguments, and No Return Value
+def Adding():
+    a = 20
+    b = 30
+    Sum = a + b
+    print("After Calling :", Sum)
 
 
-palindromeCheck(131)
-palindromeCheck(34)
-
-def factorial(n):
-    fact = 1
-    while (n != 0):
-        fact *= n
-        n = n - 1
-    print("The factorial is", fact)
-inputNumber = int(input("Enter the number: "))
-factorial(inputNumber)
-
-function with default argument
-def show_employee(name, salary=9000):
-    print("Name:", name, "salary:", salary)
-
-show_employee("Ben", 12000)
-show_employee("Jessa")
-# Python function to sum all the numbers in a list.
-def sum(numbers):
-    total = 0
-    for x in numbers:
-        total += x
-    return total
-print(sum((8, 2, 3, 0, 7)))
-
-def carea(radius):
-    area = 3.14*radius*radius
-    print('Area of circle is', area)
-
-a = 5
-carea(a)
-
-def isPrime(number):
-    for i in range(2,number):
-        if number % i == 0:
-            return False
-    return True
-def main():
-    for n in range(100,501):
-        if isPrime(n):
-            print(n, end=' ')
-main()
-
-def show_choices():
-    print('\nMenu')
-    print('1. Add')
-    print('2. Subtract')
-    print('3. Multiply')
-    print('4. Divide')
-    print('5. Exit')
+Adding()
 
 
-def add(a, b):
-    return a + b
+# ** Python Function with no argument and with a Return value**
+# No arguments and with a Return value Example
+# With No Arguments, and with Return Value
+def Multiplication():
+    a = 10
+    b = 25
+    Multi = a * b
+    return Multi
 
 
-def subtract(a, b):
-    return a - b
+print("After Calling the Multiplication : ", Multiplication())
 
 
-def multiply(a, b):
-    return a * b
+# **Python Function with argument and No Return value**
+# With Arguments, and NO Return Value
+def Multiplications(a, b):
+    Multi = a * b
+    print("After Calling the Function:", Multi)
 
 
-def divide(a, b):
-    return a / b
+Multiplications(10, 20)
 
 
-def main():
-    while (True):
-        show_choices()
-        choice = input('Enter choice(1-5): ')
-        if choice == '1':
-            x = int(input('Enter first number: '))
-            y = int(input('Enter second number: '))
-            print('Sum =', add(x, y))
-
-        elif choice == '2':
-            x = int(input('Enter first number: '))
-            y = int(input('Enter second number: '))
-            print('Difference =', subtract(x, y))
-
-        elif choice == '3':
-            x = int(input('Enter first number: '))
-            y = int(input('Enter second number: '))
-            print('Product =', multiply(x, y))
-
-        elif choice == '4':
-            x = int(input('Enter first number: '))
-            y = int(input('Enter second number: '))
-            if y == 0:
-                print('Error!! divide by zero')
-            else:
-                print('Quotient =', divide(x, y))
-
-        elif choice == '5':
-            break
-
-        else:
-            print('Invalid input')
+# **Python Function with argument and Return value**
+# Wwith Arguments, and Return Value
+def Addition(a, b):
+    Sum = a + b
+    return Sum
 
 
-main()
+# We are calling it Outside the Definition
+print("After Calling :", Addition(25, 45))
 
+
+# Example: Parameterized Function
+def greet(name):
+    print('Hello ', name)
+
+
+greet('Ahmed')  # calling function with argument
+greet(123)
+
+
+# Multiple Parameters
+def greet(name1, name2, name3):
+    print('Hello ', name1, ' , ', name2, ', and ', name3)
+
+
+greet('Steve', 'Bill', 'Yash')  # calling function with string argument
+
+
+# Unknown Number of Arguments
+def greet(*names):
+    print('Hello ', names[0], ', ', names[1], ', ', names[3])
+
+
+greet('Ahsan', 'Bilal', 'Sarim')
+
+
+# The following function works with any number of arguments.
+def greet(*names):
+    i = 0
+    print('Hello ', end='')
+    while len(names) > i:
+        print(names[i], end=', ')
+        i += 1
+
+
+greet('Ahsan', 'Bilal', 'Sarim')
+greet('Steve', 'Bill', 'Yash', 'Kapil', 'John', 'Amir')
+
+
+# Function with Keyword Arguments
+# In order to call a function with arguments, the same number of actual arguments must be provided.
+# However, a function can be called by passing parameter values using the parameter names in any order.
+# For example, the following passes values using the parameter names.
+
+def greet(firstname, lastname):
+    print('Hello', firstname, lastname)
+
+
+greet(lastname='Jobs', firstname='Ahmed')  # passing parameters in any order using keyword argument
+
+
+# Keyword Argument **kwarg
+def greet(**person):
+    print('Hello ', person['firstname'], person['lastname'])
+
+
+greet(firstname='Steve', lastname='Jobs')
+greet(lastname='Jobs', firstname='Steve')
+greet(firstname='Bill', lastname='Gates', age=55)
+greet(firstname='Bill')  # raises KeyError
