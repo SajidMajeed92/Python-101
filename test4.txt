@@ -1,0 +1,8 @@
+
+Teacher : Why are you late , Ahsan?
+word count: 8
+Ahsan : Because of the sign.
+word count: 6
+Teacher : What sign?
+word count: 4
+Ahsan: The one that says "School Ahead, Go Slow"word count: 9
