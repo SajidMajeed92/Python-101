@@ -1,4 +1,11 @@
-# Classes and Instance Introduction
+# Create a Class in Python
+# class class_name:
+#     '''This is a docstring. I have created a new class'''
+#     <statement 1>
+#     <statement 2>
+#     .
+#     .
+#     <statement N>
 
 class Person:
     def __init__(self, name, gender, profession):
