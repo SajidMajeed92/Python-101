@@ -1,12 +1,12 @@
 # Class Attributes
-
-When we design a class, we use instance variables and class variables.
-In Class, attributes can be defined into two parts:
-
-Instance variables: The instance variables are attributes attached to an instance of a class.
-We define instance variables in the constructor ( the __init__() method of a class).
-
-Class Variables: A class variable is a variable that is declared inside of class, but outside of any instance method or __init__() method.
+#
+# When we design a class, we use instance variables and class variables.
+# In Class, attributes can be defined into two parts:
+#
+# Instance variables: The instance variables are attributes attached to an instance of a class.
+# We define instance variables in the constructor ( the __init__() method of a class).
+#
+# Class Variables: A class variable is a variable that is declared inside of class, but outside of any instance method or __init__() method.
 
 class Student:
     # class variables
@@ -35,16 +35,16 @@ print('Student:', s1.name, s1.age)
 Student.school_name = 'XYZ School'
 print('School name:', Student.school_name)
 
+#
+# Class Methods
+#
+# Instance method: Used to access or modify the object state. If we use instance variables inside a method, such methods are called instance methods.
+# Class method: Used to access or modify the class state. In method implementation, if we use only class variables, then such type of methods we should declare as a class method.
+# Static method: It is a general utility method that performs a task in isolation. Inside this method,
+# we do not use instance or class variable because this static method does not have access to the class attributes.
+#
 
-Class Methods
-
-Instance method: Used to access or modify the object state. If we use instance variables inside a method, such methods are called instance methods.
-Class method: Used to access or modify the class state. In method implementation, if we use only class variables, then such type of methods we should declare as a class method.
-Static method: It is a general utility method that performs a task in isolation. Inside this method,
-we do not use instance or class variable because this static method does not have access to the class attributes.
-
-
-class methods demo
+#class methods demo
 class Student:
     # class variable
     school_name = 'ABC School'
@@ -82,16 +82,16 @@ s1.change_age(14)
 Student.modify_school_name('XYZ School')
 # call instance methods
 s1.show()
-
-Class Naming Convention
-Naming conventions are essential in any programming language for better readability. If we give a sensible name, it will save our time and energy later. Writing readable code is one of the guiding principles of the Python language.
-
-We should follow specific rules while we are deciding a name for the class in Python.
-
-Rule-1: Class names should follow the UpperCaseCamelCase convention
-Rule-2: Exception classes should end in 'Error'.
-Rule-3: If a class is callable (Calling the class from somewhere), in that case, we can give a class name like a function.
-Rule-4: Python has built-in classes are typically lowercase words
+#
+# Class Naming Convention
+# Naming conventions are essential in any programming language for better readability. If we give a sensible name, it will save our time and energy later. Writing readable code is one of the guiding principles of the Python language.
+#
+# We should follow specific rules while we are deciding a name for the class in Python.
+#
+# Rule-1: Class names should follow the UpperCaseCamelCase convention
+# Rule-2: Exception classes should end in 'Error'.
+# Rule-3: If a class is callable (Calling the class from somewhere), in that case, we can give a class name like a function.
+# Rule-4: Python has built-in classes are typically lowercase words
 
 class Fruit:
     def __init__(self, name, color):
